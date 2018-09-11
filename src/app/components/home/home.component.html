@@ -1,0 +1,10 @@
+<div>{{listOrders | json}}</div>
+<div>
+  <div *ngFor="let item of listOrders">
+    <p>
+      {{item.customerName}}
+    </p>
+  </div>
+</div>
+
+<button (click)="logOut()">Logout</button>
